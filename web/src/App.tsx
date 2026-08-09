@@ -73,6 +73,7 @@ import { ProfileScopeBanner } from "@/components/ProfileScopeBanner";
 import { useSystemActions } from "@/contexts/useSystemActions";
 import type { SystemAction } from "@/contexts/system-actions-context";
 import ConfigPage from "@/pages/ConfigPage";
+import VilaOyoPage from "@/pages/VilaOyoPage";
 import DocsPage from "@/pages/DocsPage";
 import EnvPage from "@/pages/EnvPage";
 import FilesPage from "@/pages/FilesPage";
@@ -150,6 +151,7 @@ const BUILTIN_ROUTES_CORE: Record<string, ComponentType> = {
   "/config": ConfigPage,
   "/env": EnvPage,
   "/docs": DocsPage,
+  "/vila-oyo": VilaOyoPage,
 };
 
 // Route placeholder for /chat.  The persistent ChatPage host (rendered
@@ -192,12 +194,7 @@ const BUILTIN_NAV_REST: NavItem[] = [
   { path: "/config", labelKey: "config", label: "Config", icon: Settings },
   { path: "/env", labelKey: "keys", label: "Keys", icon: KeyRound },
   { path: "/system", label: "System", icon: Wrench },
-  {
-    path: "/docs",
-    labelKey: "documentation",
-    label: "Documentation",
-    icon: BookOpen,
-  },
+  { path: "/vila-oyo", labelKey: "vila-oyo", label: "Vila de Oyó", icon: Globe },
 ];
 
 const ICON_MAP: Record<string, ComponentType<{ className?: string }>> = {
